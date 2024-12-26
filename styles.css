@@ -1,0 +1,96 @@
+/* Ümumi stil tənzimləmələri */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Banner */
+header .banner {
+    background-color: #ff0099; /* Neon çəhrayı */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header .banner h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header .banner p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Ürün Bölümü */
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Büyüme effekti */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.product p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+.whatsapp-button {
+    background-color: #25D366; /* WhatsApp yaşıl */
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Responsive Dizayn */
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
